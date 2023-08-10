@@ -58,7 +58,7 @@ body{
     margin: var(--MARGIN-S);
 }
 
-.main__h1{
+.main__h2{
     font-size: var(--FONTSIZE-L);
     font-family: var(--FONTFAMILY-H);
     color: var(--VERYLIGHT-GRAY);
