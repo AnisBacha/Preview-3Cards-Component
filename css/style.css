@@ -55,7 +55,7 @@ body{
 
 }
 .main__img{
-    margin: var(MARGIN-S);
+    margin: var(--MARGIN-S);
 }
 
 .main__h1{
