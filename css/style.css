@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*|| CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*|| VARIABLES*/
+:root{
+    --BGCOLOR: hsl(0, 0%, 95%);
+
+    --BRIGHT-ORANGE: hsl(31, 77%, 52%);
+    --DARK-CYAN: hsl(184, 100%, 22%);
+    --VERYDARK-CYAN: hsl(179, 100%, 13%);
+    --TRANSPARENT-WHITE: hsla(0, 0%, 100%, 0.75);
+    --VERYLIGHT-GRAY: hsl(0, 0%, 95%);
+
+    --FONTFAMILY: 'Lexend Deca';
+    --FONTFAMILY-H: 'Big Shoulders Display';
+
+    --FONTSIZE-S: 1rem;
+    --FONTSIZE-M: 1.5rem;
+    --FONTSIZE-L: 3rem;
+
+    --PADDING-S: 1rem;
+    --PADDING-M: 1.5rem;
+    --MARGIN-S: 1rem;
+    --MARGIN-M: 1.5rem;
+    --MARGIN-L: 3rem;
+}
+/*|| GENERAL STYLES*/
+body{
+    background-color: var(--BGCOLOR);
+    font-size: var(--FONTSIZE-S);
+    font-family: var(--FONTFAMILY);
+
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    margin: var(--MARGIN-L);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* ALL CARD */
+.main__card{
+    padding: var(--PADDING-S);
+    width: 300px;
+
+}
+.main__img{
+    margin: var(MARGIN-S);
+}
+
+.main__h1{
+    font-size: var(--FONTSIZE-L);
+    font-family: var(--FONTFAMILY-H);
+    color: var(--VERYLIGHT-GRAY);
+    padding: var(--PADDING-S);
+}
+
+.main__description{
+    padding: var(--PADDING-S);
+    margin-bottom: 5rem;
+    color: var(--TRANSPARENT-WHITE);
+}
+
+.main__more{
+    margin: var(--MARGIN-S);
+    padding: var(--PADDING-S);
+    background-color: var(--VERYLIGHT-GRAY);
+    border-radius: 40px;
+    max-width: 150px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main__more a:any-link{
+    text-decoration: none;
+    text-align: center;
+}
+.main__more:hover{
+    background-color: transparent;
+    outline: 2px solid var(--VERYLIGHT-GRAY);
+    
+}
+.main__more:hover a{
+    color: var(--VERYLIGHT-GRAY);
+}
+
+
+/* INDIVIDUAL CARD*/
+.main__moresedans a{
+    color: var(--BRIGHT-ORANGE);
+}
+.main__moresuvs a{
+    color: var(--DARK-CYAN);
+}
+.main__moreluxury a{
+    color: var(--VERYDARK-CYAN);
+}
+
+.main__sedans{
+    background-color: var(--BRIGHT-ORANGE) ;
+    border-radius: 10px 10px 0 0 ;
+}
+.main__suvs{
+    background-color: var(--DARK-CYAN);
+}
+.main__luxury{
+    background: var(--VERYDARK-CYAN);
+    border-radius: 0 0 10px 10px;
+}
+
+/* DESKTOP VIEW*/
+@media screen and (min-width: 598px) {
+    .main__sedans{
+       
+        border-radius: 10px 0 0 10px;
+    }
+    .main__luxury{
+     
+        border-radius: 0 10px 10px 0;
+    }
+}
